@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Palindrome Number</title>
+		<script language="JavaScript">
+			var num = x = 1221, digit = 0, reverse=0;
+			while(x>0){
+				digit = x%10;
+				reverse = (reverse*10)+digit;
+				x = parseInt(x/10);
+				}
+			if(reverse == num)
+				document.write(num + " is a palindrome number.");
+			else
+				document.write(num + " is not a palindrome number.");
+		</script>
+	</head>
+	<body>
+		<p>Welcome All</p>
+	</body>
+</html>

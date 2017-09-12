@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Regular Expression for Only Alphabets</title>
+		<script language="JavaScript">
+		function onlyNumbers(e){
+			var keynum, keycharm, numcheck;
+			//if(window.event){
+				keynum = e.keyCode;
+			//}
+			keychar = String.fromCharCode(keynum);
+			numcheck = /[A-Za-z]/;
+			return numcheck.test(keychar);
+		}
+		</script>
+	</head>
+	<body>
+		<form>
+			<input type="text" onkeypress="return onlyNumbers(event)"/>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS Training Assignment</title>
+	<script type="text/JavaScript">
+		function validateForm(){
+			var mobile_num = document.contact_form.mobile.value;
+			var name = document.contact_form.name.value;
+			var mobileRegex = /^(?:[0-9]{10})$/;
+			var emptyRegex = /^$/;
+			var result = emptyRegex.test(mobile_num) || emptyRegex.test(name);
+			if(result == true){
+				document.getElementById("message").innerHTML = "Value not entered.";
+			}
+			else{
+			var result = mobileRegex.test(mobile_num);
+			if(result == false){
+				document.getElementById("message").innerHTML = "Not a valid Mobile Number";
+			}
+			else{
+				document.getElementById("message").innerHTML = "Valid  Mobile Number";
+			}
+			}
+			
+		}
+	</script>
+	</head>
+<body>
+	<form name="contact_form">
+		<input type="text" name="mobile"/>
+		<input type="text" name="name"/>
+		<input type="button" onclick="validateForm()" value="Validate"/>
+		<p id="message">Enter the fields and click on 'Validate'</p>
+	</form>
+</body>
+</html>
