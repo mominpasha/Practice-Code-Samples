@@ -1,0 +1,1 @@
+Output Datathis is data Inside the input.txt file
