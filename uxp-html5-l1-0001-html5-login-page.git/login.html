@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>UXP-HTML5-L1-0001</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <style type="text/css">
+      * { 
+        margin: 30px 0px;
+      }
+      body {
+        margin: 10px;
+        background-color: gainsboro;
+      }
+      .welcome span {
+        font-size: 30px;
+        font-weight: bold;
+        margin-right: 12px;
+      }
+      .welcome a {
+        font-size: 20px;
+        text-decoration: underline;
+        color: gray;
+      }
+      .welcome p {
+        font-size: 18px;
+      }
+      .email {
+        width: 50%;
+      }
+      .box1 {
+        border-right: solid 1px black;
+      }
+      .box2 {
+        text-align: center;
+
+      }
+      .submt-btn {
+        background-color: #484848;
+        color: white;
+      }
+      .submt-btn:hover {
+        cursor: pointer;
+      }
+      label {
+        font-weight: bold;
+        font-size: 30px;
+      }
+      .loginBtn {
+        box-sizing: border-box;
+        position: relative;
+        width: 60%;
+        margin: 0.2em;
+        padding: 0 15px 0 46px;
+        border: none;
+        line-height: 34px;
+        border-radius: 0.2em;
+        font-size: 16px;
+        color: #FFF;
+        margin-top: 30px;
+      }
+      .loginBtn:before {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 34px;
+        height: 100%;
+      }
+      .loginBtn--facebook {
+        background-color: #4C69BA;
+        background-image: linear-gradient(#4C69BA, #3B55A0);
+        /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+        text-shadow: 0 -1px 0 #354C8C;
+      }
+      .loginBtn--facebook:before {
+        border-right: #364e92 1px solid;
+        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat;
+      }
+      .loginBtn--facebook:hover,
+      .loginBtn--facebook:focus {
+        background-color: #5B7BD5;
+        background-image: linear-gradient(#5B7BD5, #4864B1);
+        cursor: pointer;
+      }
+      @media screen and (max-width: 480px) {
+        .welcome a {
+                  display: block;
+        }
+        .box1 {
+        border-right: none;
+        padding-bottom: 15px;
+        border-bottom: solid 1px black;
+        margin-bottom: 15px;
+        }
+        * {
+          margin: 0px 0px;
+        }
+        body {
+          margin: 0px;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row welcome">
+        <div class="col-sm-12">
+        <p><span>Login</span>or <a href="#">Register a new Account</a></p>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 box1">
+          <h3>Forgot password ?</h3>
+          <form>
+            <div class="form-group">
+              <label for="email">Email ID *</label>
+              <input type="email" class="form-control email" id="email" placeholder="****@****.com" required="required">
+            </div>
+            <button type="submit" class="btn submt-btn">Email Password</button>
+          </form>
+        </div>
+        <div class="col-sm-12 col-md-6 box2">
+          <h3>Have a Facebook account ?</h3>
+          <button class="loginBtn loginBtn--facebook">Login with Facebook</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
