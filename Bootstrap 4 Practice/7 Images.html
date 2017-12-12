@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Images Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+<div class="container-fluid">
+ <div class="row">
+	<div class="col">
+	<figure>
+		<img src="images/1.jpg" alt="Momin Pasha">
+		<figcaption>Normal Image without any styling</figcaption>
+	</figure>
+	</div>
+	<div class="col">
+	<figure>
+		<img src="images/1.jpg" class="rounded" alt="Momin Pasha">
+		<figcaption>Image with .rounded class</figcaption>
+	</figure>
+	</div>
+	<div class="col">
+	<figure>
+		<img src="images/1.jpg" class="rounded-circle" alt="Momin Pasha">
+		<figcaption>Image with .rounded-circle class</figcaption>
+	</figure>
+	</div>
+	<div class="col">
+	<figure>
+		<img src="images/1.jpg" class="img-thumbnail" alt="Momin Pasha">
+		<figcaption>Image with .img-thumbnail class</figcaption>
+	</figure>	
+	</div>
+ </div>
+ <h2 class="text-center">Aligning</h2>
+ <div class="row">
+	<div class="col">
+	<figure class="float-left">
+		<img src="images/2.jpg" width="300px" alt="Momin Pasha">
+		<figcaption>float-left</figcaption>
+	</figure>
+	<figure class="float-right">
+		<img src="images/2.jpg" width="300px"  alt="Momin Pasha">
+		<figcaption>float-right</figcaption>
+	</figure>	
+	</div>
+ </div>
+ <h2 class="text-center">Responsive Images</h2>
+ <div class="row">
+	<div class="col">
+	<figure>
+		<img src="images/3.jpg" class="rounded img-fluid" alt="Momin Pasha">
+		<figcaption>Image with .rounded class - rounded img-fluid</figcaption>
+	</figure>
+	</div>
+	<div class="col">
+	<figure>
+		<img src="images/3.jpg" class="rounded-circle img-fluid" alt="Momin Pasha">
+		<figcaption>Image with .rounded-circle class - rounded-circle img-fluid</figcaption>
+	</figure>
+	</div>
+	<div class="col">
+	<figure>
+		<img src="images/3.jpg" class="img-thumbnail img-fluid" alt="Momin Pasha">
+		<figcaption>Image with .img-thumbnail class - img-thumbnail img-fluid</figcaption>
+	</figure>	
+	</div>
+ </div>
+</div>
+</body>
+</html>
